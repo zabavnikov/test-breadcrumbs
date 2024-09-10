@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Select from '~/components/_form/Select.vue'
-import type { AvailableLanguages } from '~/types'
+import type { AvailableLocales } from '~/types'
 
-const model = defineModel<AvailableLanguages>({
+const model = defineModel<AvailableLocales>({
   default: 'ru'
 })
 </script>

@@ -1,4 +1,4 @@
-export type AvailableLanguages = 'ru' | 'en'
+export type AvailableLocales = 'ru' | 'en'
 
 export type TreeItemLocale = {
   id: number
@@ -6,7 +6,7 @@ export type TreeItemLocale = {
   cg_slug: string
 }
 
-export type TreeItemLocaleMap = Record<AvailableLanguages, TreeItemLocale>
+export type TreeItemLocaleMap = Record<AvailableLocales, TreeItemLocale>
 
 export type TreeItem = {
   id: number
@@ -19,7 +19,7 @@ export type Tree = {
   page_data: {
     tree: TreeItem[]
   },
-  locale: AvailableLanguages
+  locale: AvailableLocales
 }
 
 export type Breadcrumb = {

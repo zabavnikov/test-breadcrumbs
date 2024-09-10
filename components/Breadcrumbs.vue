@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from '#imports'
-import type { AvailableLanguages, TreeItem, TreeItemLocaleMap, Breadcrumb } from '~/types'
+import type { AvailableLocales, TreeItem, TreeItemLocaleMap, Breadcrumb } from '~/types'
 
 const props = defineProps<{
   tree: TreeItem[],
-  selectedLocale: AvailableLanguages
+  selectedLocale: AvailableLocales
 }>()
 
 const currentUrl = defineModel({
